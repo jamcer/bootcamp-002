@@ -1,3 +1,5 @@
+package att.com;
+
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -11,10 +13,9 @@ class PocIvaTest {
         double valorProducto = -100;
 
         assertEquals(
-            0.0,
-            helper.calculateIva(valorProducto),
-            0.001
-        );
+                0.0,
+                helper.calculateIva(valorProducto),
+                0.001);
     }
 
     @Test
@@ -22,9 +23,8 @@ class PocIvaTest {
         double valorProducto = 0;
 
         assertEquals(
-            0.0,
-            helper.calculateIva(valorProducto),
-            0.001
-        );
+                0.0,
+                helper.calculateIva(valorProducto),
+                0.001);
     }
 }
