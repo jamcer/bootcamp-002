@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class PocIvaTest {
 
-    private final poc_iva helper = new poc_iva();
+    private final Poc_iva helper = new Poc_iva();
 
     @Test
     void shouldProductoNegativo() {

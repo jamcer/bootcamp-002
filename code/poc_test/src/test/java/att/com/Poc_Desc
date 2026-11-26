@@ -1,0 +1,24 @@
+package att.com;
+
+public class Poc_Desc {
+
+    private final double porcentajeDescuento;
+
+    public PocDesc(double porcentajeDescuento) {
+        if (porcentajeDescuento < 0 || porcentajeDescuento > 100) {
+            throw new IllegalArgumentException(
+                    "El porcentaje debe estar entre 0 y 100"
+            );
+        }
+
+        this.porcentajeDescuento = porcentajeDescuento;
+    }
+
+    public double calculateDesc(double valorProducto) {
+        if (valorProducto <= 0) {
+            return 0.0;
+        }
+
+        return valorProducto * porcentajeDescuento / 100.0;
+    }
+}
